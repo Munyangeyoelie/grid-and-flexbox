@@ -60,3 +60,4 @@ userOne.login = false;
 userTwo.login = true;
 console.log(userOne);
 console.log(userTwo);
+console.log(userTwo.login);
