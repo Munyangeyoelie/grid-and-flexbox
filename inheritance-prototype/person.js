@@ -21,3 +21,14 @@ const Book3 = {
 console.log(Book3.title);
 
 console.log(Book3.author);
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+Person.prototype.getFullName = function () {
+  return this.firstName + " " + this.lastName;
+};
+const Person1 = new Person("Munyangeyo", "Elie");
+const Person2 = new Person("Ishimwe", "Daamming");
+console.log(Person1);
+console.log(Person2);
