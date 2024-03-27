@@ -36,3 +36,27 @@ console.log(Person1);
 console.log(Person2);
 
 //this on login and logout
+function User(email, name, password) {
+  this.email = email;
+  this.name = name;
+  this.password = password;
+  this.online = false;
+}
+User.prototype.login = function (email, name, password) {
+  if ((online = true)) {
+    this.email = email;
+    this.name = name;
+    this.password = password;
+    this.online = true;
+    console.log("user" + this.name + " " + this.email + " has logged in");
+  } else {
+    console.log("user" + this.name + " " + this.email + " has not logged in");
+  }
+};
+
+const userOne = new User("Munyangeyo", "Elie", 1234);
+const userTwo = new User("Shown", "Kwiringira", 3456);
+userOne.login = false;
+userTwo.login = true;
+console.log(userOne);
+console.log(userTwo);
