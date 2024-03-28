@@ -7,4 +7,4 @@ const output = document.getElementById("output");
 function myLibrary() {
   output.innerHTML = title.value + author.value + page.value;
 }
-myLibrary();
+addBook.addEventListener("click", myLibrary);
