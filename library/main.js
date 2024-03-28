@@ -20,10 +20,5 @@ function addBookToLibrary() {
 }
 let newBook = document.querySelector("#book");
 newBookbtn.addEventListener("click", function {
-  let title = document.querySelector("#title").value;
-  let author = document.querySelector("#author").value;
-  let page = document.querySelector("#page").value;
-  let newBook = new Book(title, author, page);
-  myLibrary.push(newBook);
-  console.log(myLibrary);
-}
+
+})
