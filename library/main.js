@@ -8,3 +8,4 @@ function myLibrary() {
   output.innerHTML = title.value + author.value + page.value;
 }
 addBook.addEventListener("click", myLibrary);
+console.log("Hello");
