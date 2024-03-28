@@ -9,3 +9,12 @@
 // }
 // addBook.addEventListener("click", myLibrary);
 // console.log("Hello");
+const myLibrary = [];
+
+function Book() {
+  // the constructor...
+}
+
+function addBookToLibrary() {
+  // do stuff here
+}
