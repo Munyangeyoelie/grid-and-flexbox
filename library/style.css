@@ -78,3 +78,5 @@ input {
   width: 400px;
   height: minmax(100px, 300px);
 }
+.inner {
+}
