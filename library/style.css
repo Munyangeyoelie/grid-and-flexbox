@@ -75,6 +75,6 @@ input {
   border: 5px solid #pink;
   border-radius: 10px;
   color: black;
-  width: 40%;
+  width: 400px;
   height: minmax(100px, 300px);
 }
