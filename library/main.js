@@ -11,8 +11,12 @@
 // console.log("Hello");
 const myLibrary = [];
 
-function Book() {
+function Book(title, author, page, read) {
   // the constructor...
+  this.title = title;
+  this.author = author;
+  this.page = page;
+  this.read = read;
 }
 
 function addBookToLibrary() {
@@ -20,5 +24,7 @@ function addBookToLibrary() {
 }
 let newBook = document.querySelector("#book");
 newBookbtn.addEventListener("click", function {
+  let newBookForm = document.querySelector ("addBook");
+  
 
 })
