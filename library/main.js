@@ -1,3 +1,14 @@
+// const title = document.getElementById("title");
+// const author = document.getElementById("author");
+// const page = document.getElementById("page");
+// const addBook = document.getElementById("addBook");
+// const output = document.getElementById("output");
+
+// function myLibrary() {
+//   output.innerHTML = title.value + author.value + page.value;
+// }
+// addBook.addEventListener("click", myLibrary);
+// console.log("Hello");
 const myLibrary = [];
 
 function Book(title, author, page, read) {
@@ -10,48 +21,16 @@ function Book(title, author, page, read) {
 
 function addBookToLibrary() {
   // do stuff here
-}
-
-let newBookBtn = document.querySelector("#ngeyo");
-newBookBtn.addEventListener("click", () => {
-  let newBookForm = document.querySelector("#add-book");
-
-  let title = newBookForm.elements.title;
-  let author = newBookForm.elements.author;
-  let page = newBookForm.elements.page;
-  let read = newBookForm.elements.read;
-
-  let newBook = new Book(title.value, author.value, page.value, read.checked);
-
+  let title = document.getElementById("title").value;
+  let author = document.getElementById("author").value;
+  let page = document.getElementById("page").value;
+  let read = document.getElementById("read").checked;
+  let newBook = new Book(title, author, page, read);
   myLibrary.push(newBook);
-
-  displayLibrary();
-
-  newBookForm.reset();
+  console.log(myLibrary);
+}
+let newBook = document.querySelector("#book");
+newBookbtn.addEventListener("click", function () {
+  let newBookForm = document.querySelector("addBook");
+  newBookFrom.style.display = "block";
 });
-
-function Book(title, author, page, read) {
-  // the constructor...
-  this.title = title;
-  this.author = author;
-  this.page = page;
-  this.read = read;
-}
-
-function displayLibrary() {
-  let output = document.querySelector("#output");
-
-  output.innerHTML = "";
-
-  for (let book of myLibrary) {
-    output.innerHTML += `
-      <div class="book">
-        <h3>${book.title} by ${book.author}</h3>
-        <p>${book.page} pages</p>
-        <p>${book.read ? "Yes" : "No"} read</p>
-      </div>
-    `;
-  }
-}
-
-displayLibrary();
