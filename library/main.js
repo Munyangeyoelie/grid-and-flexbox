@@ -30,7 +30,7 @@ function addBookToLibrary() {
   console.log(myLibrary);
 }
 let newBook = document.querySelector("#book");
-newBookbtn.addEventListener("click", function () {
+book.addEventListener("click", function () {
   let newBookForm = document.querySelector("addBook");
   newBookFrom.style.display = "block";
 });
