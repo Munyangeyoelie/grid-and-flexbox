@@ -1,0 +1,38 @@
+body {
+  dispaly: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/image.jpg) no-repeat center center;
+  background-size: cover;
+}
+.accordian {
+  width: 45%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 30px;
+}
+.accordian .accordian-title {
+  margin-button: 30px;
+  text-align: center;
+}
+.accordian .content-container .questions {
+  padding: 18px 0px;
+  font-size: 22px;
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.accordian .content-container .questions:after {
+  content: "+";
+  position: absolute;
+  right: -5px;
+}
+.accordian .content-container .answer {
+  padding: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1.5;
+  width: 100%;
+}
