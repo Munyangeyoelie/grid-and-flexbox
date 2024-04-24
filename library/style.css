@@ -6,10 +6,10 @@ body {
   background: #42cca0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
   min-height: 100vh;
 }
 #new-book-btn {
@@ -30,6 +30,7 @@ body {
   background: #46745d;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transparent: 50% transparent;
 }
 
 #new-book-form input {
@@ -92,4 +93,13 @@ body {
 #close-btn:hover {
   background: #ff0000;
   cursor: pointer;
+}
+#library {
+  display: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
