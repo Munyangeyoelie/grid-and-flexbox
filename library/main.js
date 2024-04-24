@@ -25,5 +25,5 @@ newBookBtn.addEventListener("click", function () {
 });
 document.querySelector(".add-book").addEventListener("click", function () {
   event.preventDefault();
-  console.log("New Book");
+  addBookToLibrary();
 });
