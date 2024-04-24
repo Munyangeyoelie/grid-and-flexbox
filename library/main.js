@@ -15,6 +15,7 @@ function render() {
     bookEl.innerHTML = `<p>${book.title}</p>`;
     libraryEl.appendChild(bookEl);
   }
+  return libraryEl;
 }
 
 function addBookToLibrary() {
