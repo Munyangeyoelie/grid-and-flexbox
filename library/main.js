@@ -9,6 +9,7 @@ function addBookToLibrary() {
 }
 let newBookBtn = document.querySelector("#new-book-btn");
 newBookBtn.addEventListener("click", function () {
-  let newBookBtn = document.querySelector("#new-book-btn");
+  alert("New Book");
+  let newBookForm = document.querySelector("#new-book-form");
   newBookBtn.style.display = "block";
 });
