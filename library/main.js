@@ -24,5 +24,6 @@ newBookBtn.addEventListener("click", function () {
   newBookForm.style.display = "block";
 });
 document.querySelector(".add-book").addEventListener("click", function () {
+  event.preventDefault();
   console.log("New Book");
 });
