@@ -21,7 +21,7 @@ function addBookToLibrary() {
 let newBookBtn = document.querySelector("#new-book-btn");
 newBookBtn.addEventListener("click", function () {
   let newBookForm = document.querySelector("#new-book-form");
-  newBookForm.style.display = "flex";
+  newBookForm.style.display = "block";
 });
 document.querySelector(".add-book").addEventListener("click", function () {
   console.log("New Book");
