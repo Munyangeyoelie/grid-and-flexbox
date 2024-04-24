@@ -12,3 +12,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.add-new-book {
+  width: 200px;
+  height: 100px;
+  font-size: 70px;
+  display: absolute;
+  top: 10%;
+  left: 10%;
+}
