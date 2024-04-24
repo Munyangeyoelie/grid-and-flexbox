@@ -17,7 +17,12 @@ function render() {
     <div class="card-header">
       <h3 class="title">${book.title}</h3>
       <h5 class="author">${book.author}</h5>
-    </div>`;
+    </div>
+    <div class="card-body">
+    <p class="pages">${book.pages} pages</p>
+    <p class="read">${book.read ? "Read" : "Not Read"}</p>
+    </div>
+    `;
     libraryEl.appendChild(bookEl);
   }
   return libraryEl;
