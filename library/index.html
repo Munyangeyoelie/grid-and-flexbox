@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button class="add-new-book">
+    <button class="new-book-btn">
       <i class="fa fa-plus" aria-hidden="true">+</i>
     </button>
     <div class="modal">
       <form id="new-book-form">
-        <input type="text" id="title" placeholder="title" />
-        <input type="text" id="author" placeholder="Authors" />
-        <input type="text" id="pages" placeholder="Pages" />
-        <button class="add-book">Add Book</button>
+        <div class="form">
+          <input type="text" id="title" placeholder="title" />
+          <input type="text" id="author" placeholder="Authors" />
+          <input type="text" id="pages" placeholder="Pages" />
+          <button class="add-book">Add Book</button>
+        </div>
+        <div id="close-btn">&times;</div>
       </form>
-      <div id="close-btn">&times;</div>
     </div>
     <script src="main.js"></script>
   </body>
