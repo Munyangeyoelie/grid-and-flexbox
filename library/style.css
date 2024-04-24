@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-#new-book-bt {
+#new-book-btn {
   width: 200px;
   height: 100px;
   font-size: 70px;
